@@ -1012,3 +1012,93 @@ section {
     0%, 100% { opacity: 0.2; transform: scaleX(0.6); }
     50% { opacity: 0.7; transform: scaleX(1); }
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   MASTER RESPONSIVE FIXES (Mobile, Tablet, Laptop, Desktop)
+   ========================================================= */
+
+/* --- 1. Laptops & Small Desktops (Max 1200px) --- */
+@media (max-width: 1200px) {
+    .hero-title { font-size: 4rem; }
+    .hero-inner { gap: 30px; }
+    .photo-stage { width: 320px; height: 320px; }
+    .about-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+    .about-photo-wrap { max-width: 100%; margin-bottom: 20px; }
+}
+
+/* --- 2. Tablets (Max 900px) --- */
+@media (max-width: 900px) {
+    /* Navbar */
+    .nav-links { display: none; }
+    .navbar { padding: 15px 5vw; }
+    
+    /* Hero Section */
+    .hero { padding: 120px 5vw 60px; }
+    .hero-inner { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 50px; 
+    }
+    .hero-title { font-size: 3.5rem; }
+    .hero-sub { margin: 0 auto 30px; }
+    .hero-actions, .hero-metrics { justify-content: center; }
+    
+    /* Photo Stage */
+    .photo-stage { width: 280px; height: 280px; margin: 0 auto; }
+    .float-chip { display: none; } /* Chips hide kar dein taake screen kharab na ho */
+
+    /* About Section */
+    .about-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .about-photo-wrap { max-width: 300px; margin: 0 auto; }
+    .about-tags { justify-content: center; }
+
+    /* Projects Grid */
+    .projects { grid-template-columns: 1fr; }
+    .project-feature .project-grid { grid-template-columns: 1fr; gap: 30px; }
+
+    /* Contact Grid */
+    .contact-links { grid-template-columns: 1fr; }
+}
+
+/* --- 3. Mobiles (Max 600px) --- */
+@media (max-width: 600px) {
+    /* Typography */
+    .hero-title { font-size: 2.6rem; }
+    .section-title { font-size: 2rem; }
+    .hero-sub { font-size: 0.95rem; }
+    
+    /* Buttons */
+    .hero-actions { flex-direction: column; width: 100%; }
+    .btn { width: 100%; justify-content: center; }
+    
+    /* Metrics (Numbers) */
+    .hero-metrics { flex-direction: column; gap: 15px; }
+    
+    /* Photo Stage (Aur chhota) */
+    .photo-stage { width: 240px; height: 240px; }
+    .stage-ring { display: none; } /* Mobile par rings hide kar dein */
+
+    /* Projects */
+    .project { padding: 25px; }
+    .project-title { font-size: 1.4rem; }
+    .project-feature .project-title { font-size: 1.6rem; }
+    
+    /* Voice Console (EV project wala) */
+    .voice-console { padding: 15px; }
+    .bubble p { font-size: 0.75rem; }
+
+    /* About Photo */
+    .about-photo-wrap { max-width: 250px; }
+    
+    /* Footer */
+    .footer-inner { flex-direction: column; text-align: center; gap: 10px; }
+}
