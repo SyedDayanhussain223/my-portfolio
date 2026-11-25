@@ -1102,3 +1102,47 @@ section {
     /* Footer */
     .footer-inner { flex-direction: column; text-align: center; gap: 10px; }
 }
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   FINAL MOBILE FIT FIX (Isko sabse neeche paste karein)
+   ========================================== */
+@media (max-width: 768px) {
+    /* Text aur buttons ko screen ke andar rakhna */
+    body, html { overflow-x: hidden; }
+    .hero { padding: 100px 4vw 40px; }
+    .hero-title { font-size: 2.4rem; line-height: 1.1; }
+    .hero-sub { font-size: 0.9rem; padding: 0 10px; }
+    
+    /* Buttons ko upar neeche karna */
+    .hero-actions { flex-direction: column; width: 100%; gap: 10px; }
+    .btn { width: 90%; margin: 0 auto; justify-content: center; padding: 14px; }
+    
+    /* Metrics (8,2,1) ko seedha line mein lana */
+    .hero-metrics { flex-direction: row; justify-content: space-between; width: 100%; gap: 5px; margin-top: 25px; }
+    .metric strong { font-size: 1.6rem; }
+    .metric span { font-size: 0.55rem; }
+
+    /* Photo Stage ko screen mein fit karna (Asli Masla) */
+    .hero-right { margin-top: 30px; }
+    .photo-stage { width: 250px !important; height: 250px !important; margin: 0 auto; }
+    .stage-ring { display: none; } 
+    
+    /* Navbar ko chhota karna */
+    .brand-text strong { font-size: 0.65rem; }
+    .brand-text em { display: none; }
+    .nav-cta { padding: 8px 12px; font-size: 0.6rem; }
+    
+    /* Baqi sections */
+    .section-title { font-size: 2rem; }
+    .about-grid, .projects, .project-feature .project-grid, .contact-links, .stack-grid, .vision-grid { grid-template-columns: 1fr; gap: 20px; }
+    .project { padding: 20px; }
+}
